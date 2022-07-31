@@ -8,9 +8,9 @@ set( CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall")
 set( CMAKE_BUILD_TYPE Debug)
 
 ##------------------------------------------------------------
-file( GLOB_RECURSE LOCAL_SRC CONFIGURE_DEPENDS "libs/*.cpp")
-file( GLOB LOCAL_HEADERS CONFIGURE_DEPENDS "libs/" )
-file( GLOB LOCAL_PRE_HEADERS CONFIGURE_DEPENDS "libs/pre/*.h")
+file( GLOB_RECURSE LOCAL_SRC CONFIGURE_DEPENDS "src/*.cpp")
+file( GLOB LOCAL_HEADERS CONFIGURE_DEPENDS "src/" )
+file( GLOB LOCAL_PRE_HEADERS CONFIGURE_DEPENDS "src/pre/*.h")
 ##------------------------------------------------------------
 set( LIBS_INCLUDE_DIRS 
 )

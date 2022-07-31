@@ -11,3 +11,16 @@ T::BoxClass():
 {
     printf( "asdasd");
 }
+
+T::Point& T::getPoint( Point::Type type) 
+{
+    return points[ type];
+}
+T::Edge& T::getEdge( Edge::Type type)
+{
+ return edges[ type];
+}
+T::Box& T::getBox()
+{
+    return box;
+}   

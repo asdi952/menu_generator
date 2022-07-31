@@ -17,6 +17,11 @@ public:
  
     BoxClass();
 
+    Point& getPoint( Point::Type);
+    Edge& getEdge( Edge::Type);
+    Box& getBox();
+
+
 private:
     Data data;
 

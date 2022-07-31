@@ -4,7 +4,7 @@
 #include "box_data.h"
 #include "box_edge.h"
 #include "box_box.h"
-
+#include "box_types.h"
 //forward declaration
 namespace BoxPrimitive
 {
@@ -17,7 +17,8 @@ namespace BoxPrimitive
     class Point
     {
     public:
-        enum Type{ topleft, topright, botright, botleft};
+        using Type = Point_Type;
+        
     public:
         Point( Data& data, Type type);
 

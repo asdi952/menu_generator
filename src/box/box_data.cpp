@@ -1,6 +1,12 @@
 
 #include "box_data.h"
 
+using T1 = BoxPrimitive::DataPoint;
+
+T1::DataPoint( Point_Type type): type( type)
+{}
+
+
 
 using T = BoxPrimitive::Data;
 

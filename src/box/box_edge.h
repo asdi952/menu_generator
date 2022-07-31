@@ -4,6 +4,7 @@
 #include "box_data.h"
 #include "box_point.h"
 #include "box_box.h"
+#include "box_types.h"
 
 namespace BoxPrimitive
 {
@@ -16,7 +17,8 @@ namespace BoxPrimitive
     class Edge
     {
     public:
-        enum Type{ top, right, bot, left};
+        using Type = Edge_Type;
+        
     public:
         Edge( Data& data, Type type);
 
