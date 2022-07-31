@@ -5,24 +5,27 @@
 
 namespace BoxPrimitive
 {
-    class DataPoint
-    {
-    public:
-        DataPoint( Point_Type type);
-        Vec2< int> points;
-        Point_Type type;
-    };
+    
 
     class Data
     {
     public:
+        class Point
+        {
+        public:
+            Point( Point_Type type);
+            Vec2< int> points;
+            Point_Type type;
+        };
+    public:
         Data();
         
-        DataPoint& getPoint( Point_Type);
-        DataPoint& getFirstPoint( Edge_Type);
-        DataPoint& getSecondPoint( Edge_Type);
+        Point& getPoint( Point_Type);
+        Point& getFirstPoint( Edge_Type);
+        Point& getSecondPoint( Edge_Type);
+
     private:
-       DataPoint points[4];
+       Point points[4];
         
     };
 }

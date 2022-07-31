@@ -27,6 +27,6 @@ namespace BoxPrimitive
         void anchor( Box& box);
     private:
         Data& data;
-        DataPoint& point;
+        Data::Point& point;
     };
 }

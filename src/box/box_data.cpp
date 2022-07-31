@@ -1,14 +1,10 @@
 
 #include "box_data.h"
 
-using T1 = BoxPrimitive::DataPoint;
-
-T1::DataPoint( Point_Type type): type( type)
-{}
-
-
 
 using T = BoxPrimitive::Data;
+using T1 = T::Point;
+
 
 T::Data(): points({ Point_Type::topleft, Point_Type::topright, Point_Type::botright, Point_Type::botleft,})
 {
@@ -47,3 +43,8 @@ T1& T::getSecondPoint( Edge_Type type)
 
     return points[ val];
 }
+
+//----####----####----####----####----####----####
+
+T1::Point( Point_Type type): type( type)
+{}

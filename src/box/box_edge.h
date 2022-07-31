@@ -29,7 +29,7 @@ namespace BoxPrimitive
     private:
         Data& data;
 
-        DataPoint& point0;
-        DataPoint& point1;
+        Data::Point& point0;
+        Data::Point& point1;
     };
 }
