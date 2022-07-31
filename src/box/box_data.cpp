@@ -10,27 +10,27 @@ T1::DataPoint( Point_Type type): type( type)
 
 using T = BoxPrimitive::Data;
 
-T::Data(): points()
+T::Data(): points({ Point_Type::topleft, Point_Type::topright, Point_Type::botright, Point_Type::botleft,})
 {
-    for( auto& p : points) 
+    for( auto& p : points)
     {
-        p.reset(0);
+        p.points.reset(0);
     }
 }
 
-Vec2< int>& T::getPoint( int num)
+T1& T::getPoint( Point_Type type)
 {
-    return points[ num];
+    return points[ type];
 }
 
-Vec2< int>& T::getFirstPoint( int num)
+T1& T::getFirstPoint( Edge_Type type)
 {
-    return points[ num];
+    return points[ type];
 }
-Vec2< int>& T::getSecondPoint( int num)
+T1& T::getSecondPoint( Edge_Type type)
 {
     int val = 0;
-    switch(num)
+    switch(type)
     {
         case 0:
             val = 1; break;

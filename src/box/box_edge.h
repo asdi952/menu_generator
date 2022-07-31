@@ -29,7 +29,7 @@ namespace BoxPrimitive
     private:
         Data& data;
 
-        Vec2< int> point0;
-        Vec2< int> point1;
+        DataPoint& point0;
+        DataPoint& point1;
     };
 }

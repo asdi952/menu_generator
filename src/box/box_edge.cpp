@@ -2,7 +2,7 @@
 
 using T = BoxPrimitive::Edge;
 
-T::Edge( Data& data, Type type): data( data), point0( data.getFirstPoint( (int)type)), point1( data.getSecondPoint( (int)type))
+T::Edge( Data& data, Type type): data( data), point0( data.getFirstPoint( type)), point1( data.getSecondPoint( type))
 {
 
 }

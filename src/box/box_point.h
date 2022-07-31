@@ -27,6 +27,6 @@ namespace BoxPrimitive
         void anchor( Box& box);
     private:
         Data& data;
-        Vec2< int>& val;
+        DataPoint& point;
     };
 }

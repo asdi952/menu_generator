@@ -3,7 +3,7 @@
 
 using T = BoxPrimitive::Point;
 
-T::Point( Data& data, Type type): data( data), val( data.getPoint( (int)type)) 
+T::Point( Data& data, Type type): data( data), point( data.getPoint( type))
 {
 
 }
@@ -18,5 +18,5 @@ void T::anchor( Edge& edge)
 }
 void T::anchor( Box& box)
 {
-    
+
 }

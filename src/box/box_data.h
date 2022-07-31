@@ -18,11 +18,11 @@ namespace BoxPrimitive
     public:
         Data();
         
-        Vec2< int>& getPoint( int);
-        Vec2< int>& getFirstPoint( int);
-        Vec2< int>& getSecondPoint( int);
+        DataPoint& getPoint( Point_Type);
+        DataPoint& getFirstPoint( Edge_Type);
+        DataPoint& getSecondPoint( Edge_Type);
     private:
-        Vec2< int> points[4];
+       DataPoint points[4];
         
     };
 }
