@@ -16,6 +16,13 @@ namespace BoxPrimitive
             Point( Point_Type type);
             Vec2< int> points;
             Point_Type type;
+
+            class anchorRestriciton
+            {
+
+            };
+            anchorRestriciton res[4];
+
         };
     public:
         Data();
@@ -25,7 +32,8 @@ namespace BoxPrimitive
         Point& getSecondPoint( Edge_Type);
 
     private:
-       Point points[4];
+
+        Point points[4];
         
     };
 }

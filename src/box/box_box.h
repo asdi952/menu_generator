@@ -6,14 +6,7 @@
 #include "box_edge.h"
 #include "box_box_width.h"
 #include "box_box_height.h"
-
-
-//forward declaration
-namespace BoxPrimitive
-{
-    class Point;
-    class Edge;
-}
+#include "box_fd.h"
 
 namespace BoxPrimitive
 {
@@ -28,6 +21,7 @@ namespace BoxPrimitive
 
         void anchor( Point& point);
         void anchor( Edge& edge);
+        void anchor( Box& Box);
 
     private:
         Data& data;    

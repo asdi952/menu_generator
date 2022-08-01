@@ -5,12 +5,8 @@
 #include "box_edge.h"
 #include "box_box.h"
 #include "box_types.h"
-//forward declaration
-namespace BoxPrimitive
-{
-    class Edge;
-    class Box;
-}
+#include "box_fd.h"
+
 
 namespace BoxPrimitive
 {
@@ -22,9 +18,9 @@ namespace BoxPrimitive
     public:
         Point( Data& data, Type type);
 
-        void anchor( Point& point);
-        void anchor( Edge& edge);
-        void anchor( Box& box);
+        bool anchor( Point& point);
+        bool anchor( Edge& edge);
+        bool anchor( Box& box);
     private:
         Data& data;
         Data::Point& point;

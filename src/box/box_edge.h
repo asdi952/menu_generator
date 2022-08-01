@@ -5,12 +5,7 @@
 #include "box_point.h"
 #include "box_box.h"
 #include "box_types.h"
-
-namespace BoxPrimitive
-{
-    class Point;
-    class Box;
-}
+#include "box_fd.h"
 
 namespace BoxPrimitive
 {
